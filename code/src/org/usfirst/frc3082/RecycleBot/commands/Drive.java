@@ -35,6 +35,9 @@ public class  Drive extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+    	System.out.println(Robot.oi.joystick1.getMagnitude());
+    	System.out.println(Robot.oi.joystick1.getDirectionDegrees());
+    	System.out.println( Robot.oi.joystick1.getTwist());
     	Robot.drivetrain.drive(Robot.oi.joystick1.getMagnitude(), Robot.oi.joystick1.getDirectionDegrees() , Robot.oi.joystick1.getTwist());
     }
 
